@@ -252,7 +252,7 @@ a {
   flex-direction: column;
 }
 
-.review-card h4 {
+time {
   color: #707070;
   font-size: 0.875rem;
   display: flex;
