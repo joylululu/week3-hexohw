@@ -1,6 +1,6 @@
 /*標籤的統一設定*/
 body {
-  font-family: "roboto", Noto Sans TC, sans-serif;
+  font-family: "roboto", "Noto Sans TC", sans-serif;
   line-height: 1.5;
 }
 *,
@@ -54,7 +54,7 @@ a {
 .navbar-nav {
   margin-left: auto;
   display: flex;
-  flex-wrap: wrap;
+  /*flex-wrap: wrap;*/
 }
 
 .nav-item {
@@ -336,9 +336,7 @@ input[type="submit"]:hover {
   width: 100%;
   margin-top: 6px;
 }
-.form-col-50 {
-  width: 50%;
-}
+
 /*footer*/
 .footer {
   background: var(--primary);
@@ -369,7 +367,7 @@ input[type="submit"]:hover {
 }
 .footer-link {
   display: flex;
-  width: 64px;
+  /*width: 64px;*/
 }
 .footer-ic {
   display: flex;
@@ -418,6 +416,10 @@ input[type="submit"]:hover {
   margin-bottom: 24px;
 }
 @media (max-width: 992px) {
+  .container {
+    max-width: 720px;
+  }
+
   .navbar {
     width: calc(100% - 48px);
   }
@@ -477,12 +479,21 @@ input[type="submit"]:hover {
   .footer-ic-list img {
     width: 40px;
   }
-  .footer-body {
+  /*.footer-body {
     width: calc(100% - 48px);
+  }*/
+  .footer-body {
+    width: 100%;
   }
 }
 
-@media (max-width: 576px) {
+@media (max-width: 767px) {
+  .navbar-nav {
+    flex-wrap: wrap;
+    width: 100%;
+    text-align: center;
+  }
+
   .navbar {
     flex-direction: column;
     padding: 0px;
@@ -493,16 +504,56 @@ input[type="submit"]:hover {
     width: calc(100% - 24px);
   }
 
-  .navbar-nav {
-    width: 100%;
-    text-align: center;
-  }
-
   .nav-item {
     margin-left: 0px;
     width: 50%;
     border: 1px solid var(--light);
     padding: 12px 0;
+  }
+
+  .footer-nav {
+    display: none;
+  }
+  .footer-navbar {
+    margin-bottom: 20px;
+  }
+  ` .footer-ic-list {
+    margin-left: 8px;
+  }
+
+  .footer-contact li {
+    font-size: 1rem;
+  }
+  .footer-contact img {
+    width: 24px;
+    margin-right: 8px;
+  }
+  .footer-policy {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .footer-policy a {
+    margin-bottom: 8px;
+  }
+
+  .policy-item-r {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .policy-item-r a {
+    margin-left: 0px;
+  }
+  .footer-body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .container {
+    max-width: 372px;
   }
 
   .banner-lead h1 {
