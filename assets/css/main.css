@@ -379,6 +379,9 @@ input[type="submit"]:hover {
   width: 48px;
 }
 
+.footer-contact {
+  margin-bottom: 24px;
+}
 .footer-contact li {
   font-size: 2rem;
   display: flex;
@@ -524,6 +527,10 @@ input[type="submit"]:hover {
   }
   .footer-ic-list {
     margin-left: 8px;
+  }
+
+  .footer-contact {
+    margin-bottom: 20px;
   }
 
   .footer-contact li {
