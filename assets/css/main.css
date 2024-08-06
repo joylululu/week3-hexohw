@@ -7,7 +7,6 @@ body {
 *::before,
 *::after {
   box-sizing: border-box;
-  /*outline: 1px solid red;*/
 }
 img {
   max-width: 100%;
@@ -54,7 +53,6 @@ a {
 .navbar-nav {
   margin-left: auto;
   display: flex;
-  /*flex-wrap: wrap;*/
 }
 
 .nav-item {
@@ -423,9 +421,6 @@ input[type="submit"]:hover {
     max-width: 720px;
   }
 
-  .navbar {
-    /* width: calc(100% - 48px);*/
-  }
   .feature-column {
     flex-wrap: wrap;
     justify-content: space-around;
@@ -452,7 +447,6 @@ input[type="submit"]:hover {
   }
   .brand-list {
     flex-wrap: wrap;
-
     width: calc(100% - 72px);
     margin: 0 auto;
     gap: 24px;
@@ -482,9 +476,6 @@ input[type="submit"]:hover {
   .footer-ic-list img {
     width: 40px;
   }
-  /*.footer-body {
-    width: calc(100% - 48px);
-  }*/
   .footer-body {
     width: 100%;
   }
@@ -498,24 +489,9 @@ input[type="submit"]:hover {
     text-align: right;
   }
 
-  .navbar {
-    /*flex-direction: column;
-    padding: 0px;
-    border: 1px solid var(--light);
-    width: 100%;*/
-  }
-  /*.navbar-logo {
-    width: calc(100% - 24px);
-  }*/
-
-  .navbar-logo-link {
-    /*width: 100%;*/
-  }
-
   .nav-item {
     margin-left: 0px;
     width: 50%;
-    /*border: 1px solid var(--light);*/
     padding: 12px 0;
   }
 
@@ -558,16 +534,9 @@ input[type="submit"]:hover {
   .policy-item-r a {
     margin-left: 0px;
   }
-  /*.footer-body {
-    width: 100%;
-  }*/
 }
 
 @media (max-width: 576px) {
-  /*.container {
-    max-width: 372px;
-  }*/
-
   .navbar-nav {
     flex-wrap: wrap;
 
